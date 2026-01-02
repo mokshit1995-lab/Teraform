@@ -1,0 +1,20 @@
+# Terraform specific files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*tfplan*
+.terraformrc
+terraform.rc
+
+# General OS and build files
+# Ignore all .exe files
+*.exe
+# Other common ignores
+*.backup
+*.bak
+*.swp
+*~
+.DS_Store
