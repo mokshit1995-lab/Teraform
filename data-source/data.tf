@@ -23,3 +23,13 @@ output "ami_id" {
   
   value = data.aws_ami.joindevops.id
 }
+
+
+data "aws_instance" "foo" {
+  instance_id = "i-instanceid"
+  }
+
+output "mongodb_info" {
+    value = data.aws_instance.foo.public_ip
+  
+}
