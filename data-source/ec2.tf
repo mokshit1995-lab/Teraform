@@ -1,13 +1,13 @@
-resource "aws_instance" "terraform" {
-    ami = data.aws_ami.joindevops.id
-    instance_type = "t3.micro"
-    vpc_security_group_ids = [aws_security_group.Allow_All.id]
-    tags = {
-        Name = "terraform"
-        Terraform = "true"
-    }
+# resource "aws_instance" "terraform" {
+#     ami = data.aws_ami.joindevops.id
+#     instance_type = "t3.micro"
+#     vpc_security_group_ids = [aws_security_group.Allow_All.id]
+#     tags = {
+#         Name = "terraform"
+#         Terraform = "true"
+#     }
 
-}
+# }
 
 
 #  resource "aws_security_group" "Allow_All" {
